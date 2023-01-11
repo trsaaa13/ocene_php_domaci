@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#select_izaberi {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 38%;
+    width: 500px;
+}
+
+#h1_naslov {
+    margin-top: 5%;
+    margin-left: 21%;
+    font-size: 40px;
+}
+
+#div_nova_ocena {
+    margin-top: 3%;
+    margin-left: 41%;
+    font-size: 25px;
+}
+
+input {
+    font-size: 25px;
+    margin-top: 5px;
+}

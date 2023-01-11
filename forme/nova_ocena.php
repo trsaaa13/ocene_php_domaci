@@ -4,23 +4,23 @@ $db = new DB();
 ?>
 
 
-<div id="div_nova_ocena" hidden>
+<div id="div_nova_ocena" class="text-center">
 
     <form method="POST" action="#">
 
         <div class="div_element_forma">
             <label>Ime i prezime</label>
-            <input type="text" name="ime_prezime">
+            <input type="text" class="form-control" name="ime_prezime">
         </div>
 
         <div class="div_element_forma">
             <label>Broj bodova</label>
-            <input type="number" name="br_bodova">
+            <input type="number" class="form-control" name="br_bodova">
         </div>
 
         <div class="div_element_forma">
             <label>Predmet</label>
-            <select name="predmet_id">
+            <select class="form-select" name="predmet_id">
                 <?php
                 $query = "select id, naziv from predmet";
 
@@ -39,7 +39,7 @@ $db = new DB();
 
         <div class="div_element_forma">
             <label>Nastavnik</label>
-            <select name="nastavnik_id">
+            <select class="form-select" name="nastavnik_id">
                 <?php
                 $query = "select id, ime_prezime from nastavnik";
 
@@ -58,10 +58,10 @@ $db = new DB();
 
         <div class="div_element_forma">
             <label>Status</label>
-            <input type="text" name="status" value="provera">
+            <input type="text" class="form-control" name="status" value="provera">
         </div>
 
-        <button type="submit" id="submit_ocena" name="submit_ocena">Sačuvaj</button>
+        <button type="submit" class="btn btn-success" id="submit_ocena" name="submit_ocena">Sačuvaj</button>
     </form>
 </div>
 
@@ -72,6 +72,8 @@ $db = new DB();
 if (isset($_POST['submit_ocena'])) {
     $ocena = new Ocena(NULL, $_POST['ime_prezime'], $_POST['br_bodova'], $_POST['predmet_id'], $_POST['nastavnik_id'], $_POST['status']);
     $ocena->save($ocena);
+
+    header('Location: index.php');
 }
 
 ?>

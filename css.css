@@ -13,7 +13,7 @@
 
 #h1_naslov {
     margin-top: 5%;
-    margin-left: 21%;
+    margin-left: 22%;
     font-size: 40px;
 }
 
@@ -26,4 +26,11 @@
 input {
     font-size: 25px;
     margin-top: 5px;
+}
+
+#submit_ocena {
+    font-size: 22px;
+    width: 250px;
+    margin-top: 2%;
+    margin-left: 8%;
 }

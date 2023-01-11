@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css.css">
-    <title>Evidencija kontrolnih/pismenih zadataka</title>
+    <title>Evidencija ocena kontrolnih/pismenih zadataka</title>
 </head>
 
 <body>
@@ -28,6 +28,8 @@
 
     </div>
 
+
+
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </body>
 
@@ -39,6 +41,8 @@
 
         if ($(this).val() == 'nova_ocena')
             $('#div_nova_ocena').show()
+
+        
 
     });
 </script>

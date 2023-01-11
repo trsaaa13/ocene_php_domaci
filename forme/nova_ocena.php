@@ -58,7 +58,7 @@ $db = new DB();
 
         <div class="div_element_forma">
             <label>Status</label>
-            <input type="text" class="form-control" name="status" value="provera">
+            <input type="text" class="form-control" name="status" value="Provera">
         </div>
 
         <button type="submit" class="btn btn-success" id="submit_ocena" name="submit_ocena">Sačuvaj</button>

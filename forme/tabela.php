@@ -31,7 +31,10 @@
                 <td> <?php echo $ocena['br_bodova'] ?> </td>
                 <td> <?php echo $ocena['naziv'] ?> </td>
                 <td> <?php echo $ocena['n_ime_prezime'] ?> </td>
-                <td> <button class="btn btn-danger" value="provera">PROVERA</button> </td>
+                <td> <button onclick="update()" class="btn btn-danger provera_button" value="<?php echo $ocena['status'] ?>" parametar="<?php echo $ocena['id'] ?>">
+                        <?php echo $ocena['status'] ?>
+                    </button>
+                </td>
             </tr>
 
         <?php

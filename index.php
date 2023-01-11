@@ -58,4 +58,26 @@
         }
 
     });
+
+
+    
+    $('.provera_button').click(function() {
+
+
+        $.ajax({
+            url: 'update.php',
+            method: 'POST',
+            data: {
+                ID: $(this).attr('parametar'),
+                provera: $(this).val()
+            },
+
+            success: function(data) {
+                alert(data)
+                window.location.reload()
+            }
+        })
+
+
+    });
 </script>

@@ -60,7 +60,7 @@
     });
 
 
-    
+
     $('.provera_button').click(function() {
 
 
@@ -78,6 +78,27 @@
             }
         })
 
+    });
+
+
+
+    $("#sort_ime").change(function() {
+
+
+        if ($(this).val() == 1 || $(this).val() == 2) {
+
+            $.ajax({
+                url: 'sort.php',
+                method: 'POST',
+                data: {
+                    asc_desc: $(this).val()
+                },
+
+                success: function(data) {
+                    $('.tbody_sve_ocene_tbl').html(data)
+                }
+            })
+        }
 
     });
 </script>

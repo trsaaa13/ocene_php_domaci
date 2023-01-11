@@ -40,3 +40,9 @@ input {
     margin-top: 2%;
     margin-left: 11%;
 }
+
+#sort_ime {
+    width: 8%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}

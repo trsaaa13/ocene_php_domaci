@@ -41,8 +41,13 @@ input {
     margin-left: 11%;
 }
 
-#sort_ime {
-    width: 8%;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+
+
+.div_flex {
+    display: flex;
+}
+
+#div_pretrazi {
+    margin-left: 75%;
+    margin-bottom: 1%;
 }

@@ -1,12 +1,20 @@
 <div id="sve_ocene_tbl">
 
-
-    <span>Sortiraj po imenu</span>
-    <select class="form-select" id="sort_ime">
-        <option>Izaberi</option>
-        <option value="1">ASC</option>
-        <option value="2">DESC</option>
-    </select>
+    <div class="div_flex">
+        <div>
+            <span>Sortiraj po imenu</span>
+            <select class="form-select" id="sort_ime">
+                <option>Izaberi</option>
+                <option value="1">ASC</option>
+                <option value="2">DESC</option>
+            </select>
+        </div>
+        <div id="div_pretrazi">
+            <span>Pretraži po imenu</span>
+            <input type="text" class="form-control" id="ime">
+            <button class="btn btn-success mt-1" id="pretrazi_button">Pretraži</button>
+        </div>
+    </div>
 
 
     <table class="table table-bordered table-striped text-center">

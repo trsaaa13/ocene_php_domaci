@@ -101,4 +101,23 @@
         }
 
     });
+
+
+
+    $("#pretrazi_button").click(function() {
+
+
+        $.ajax({
+            url: 'pretrazi.php',
+            method: 'POST',
+            data: {
+                ime_prezime: $('#ime').val()
+            },
+
+            success: function(data) {
+                $('.tbody_sve_ocene_tbl').html(data)
+            }
+        })
+
+    });
 </script>
